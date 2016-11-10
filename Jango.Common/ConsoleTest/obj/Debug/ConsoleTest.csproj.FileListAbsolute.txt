@@ -1,0 +1,8 @@
+D:\workspace\jango_2016\Jango.Common\ConsoleTest\bin\Debug\ConsoleTest.exe.config
+D:\workspace\jango_2016\Jango.Common\ConsoleTest\bin\Debug\ConsoleTest.exe
+D:\workspace\jango_2016\Jango.Common\ConsoleTest\bin\Debug\ConsoleTest.pdb
+D:\workspace\jango_2016\Jango.Common\ConsoleTest\obj\Debug\ConsoleTest.csprojResolveAssemblyReference.cache
+D:\workspace\jango_2016\Jango.Common\ConsoleTest\obj\Debug\ConsoleTest.exe
+D:\workspace\jango_2016\Jango.Common\ConsoleTest\obj\Debug\ConsoleTest.pdb
+D:\workspace\jango_2016\Jango.Common\ConsoleTest\bin\Debug\Jango.Common.dll
+D:\workspace\jango_2016\Jango.Common\ConsoleTest\bin\Debug\Jango.Common.pdb

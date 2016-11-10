@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jango.Common", "Jango.Common\Jango.Common.csproj", "{FE9087D6-CA90-4A37-8B51-4C61857A19FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTestServer", "ConsoleTest\ConsoleTestServer.csproj", "{1F2253B3-24E7-4579-8AF2-0E210C8C200D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest_client", "ConsoleTest_client\ConsoleTest_client.csproj", "{90263151-D71E-416A-84AD-F40175A80859}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE9087D6-CA90-4A37-8B51-4C61857A19FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE9087D6-CA90-4A37-8B51-4C61857A19FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE9087D6-CA90-4A37-8B51-4C61857A19FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE9087D6-CA90-4A37-8B51-4C61857A19FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F2253B3-24E7-4579-8AF2-0E210C8C200D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F2253B3-24E7-4579-8AF2-0E210C8C200D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F2253B3-24E7-4579-8AF2-0E210C8C200D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F2253B3-24E7-4579-8AF2-0E210C8C200D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90263151-D71E-416A-84AD-F40175A80859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90263151-D71E-416A-84AD-F40175A80859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90263151-D71E-416A-84AD-F40175A80859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90263151-D71E-416A-84AD-F40175A80859}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
