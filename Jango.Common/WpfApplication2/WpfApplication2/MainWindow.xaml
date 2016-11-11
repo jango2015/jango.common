@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfApplication2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <SolidColorBrush x:Key="Brush1" Color="#FFDDDDDD"/>
+    </Window.Resources>
+    <Border CornerRadius="1" BorderThickness="1">
+        <Border.Background>
+            <ImageBrush ImageSource="3.jpg"/>
+        </Border.Background>
+        <Grid x:Name="grid">
+            <Grid HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100">
+                <Grid/>
+            </Grid>
+            <Button x:Name="button" Content="圆角按钮"  FontWeight="Bold"  FontSize="23" FontFamily="华文行楷" Cursor="Hand" Height="50" Margin="10,10,0,0" Width="100"  Foreground="#FFBA0FEC" Opacity="0.7" Background="#FF6DCB58" BorderThickness="0,1,1,1" ClipToBounds="True" SnapsToDevicePixels="True" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border BorderBrush="{TemplateBinding Control.BorderBrush}"  BorderThickness="0" CornerRadius="16" Name="part_background">
+                            <Border.Background>
+                                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                    <GradientStop Color="Yellow" Offset="0.1"/>
+                                    <GradientStop Color="YellowGreen" Offset="0.9"/>
+                                    <GradientStop Color="Yellow" Offset="0.0"/>
+                                    <GradientStop Color="Yellow" Offset="0.3"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                            <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Grid>
+    </Border>
+</Window>

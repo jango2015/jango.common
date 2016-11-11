@@ -5,3 +5,15 @@ D:\workspace\jango_2016\Jango.Common\ConsoleTest_client\bin\Debug\Jango.Common.d
 D:\workspace\jango_2016\Jango.Common\ConsoleTest_client\bin\Debug\Jango.Common.pdb
 D:\workspace\jango_2016\Jango.Common\ConsoleTest_client\obj\Debug\ConsoleTest_client.exe
 D:\workspace\jango_2016\Jango.Common\ConsoleTest_client\obj\Debug\ConsoleTest_client.pdb
+D:\workspace\jango_2016\jango.common\Jango.Common\ConsoleTest_client\bin\Debug\ConsoleTest_client.exe.config
+D:\workspace\jango_2016\jango.common\Jango.Common\ConsoleTest_client\bin\Debug\ConsoleTest_client.exe
+D:\workspace\jango_2016\jango.common\Jango.Common\ConsoleTest_client\bin\Debug\ConsoleTest_client.pdb
+D:\workspace\jango_2016\jango.common\Jango.Common\ConsoleTest_client\bin\Debug\Jango.Common.dll
+D:\workspace\jango_2016\jango.common\Jango.Common\ConsoleTest_client\bin\Debug\MahApps.Metro.dll
+D:\workspace\jango_2016\jango.common\Jango.Common\ConsoleTest_client\bin\Debug\System.Windows.Interactivity.dll
+D:\workspace\jango_2016\jango.common\Jango.Common\ConsoleTest_client\bin\Debug\Jango.Common.pdb
+D:\workspace\jango_2016\jango.common\Jango.Common\ConsoleTest_client\bin\Debug\MahApps.Metro.pdb
+D:\workspace\jango_2016\jango.common\Jango.Common\ConsoleTest_client\bin\Debug\MahApps.Metro.xml
+D:\workspace\jango_2016\jango.common\Jango.Common\ConsoleTest_client\obj\Debug\ConsoleTest_client.csprojResolveAssemblyReference.cache
+D:\workspace\jango_2016\jango.common\Jango.Common\ConsoleTest_client\obj\Debug\ConsoleTest_client.exe
+D:\workspace\jango_2016\jango.common\Jango.Common\ConsoleTest_client\obj\Debug\ConsoleTest_client.pdb
