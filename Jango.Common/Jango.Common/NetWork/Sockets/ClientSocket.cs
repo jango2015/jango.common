@@ -8,11 +8,15 @@
     {
         private EndPoint _serverEndPoint;
         private EndPoint _localEndPoint;
+        private TCPConnection _connection;
         private Socket _socket;
         private readonly ManualResetEvent _waitConnectHandle;
 
         private readonly SocketSetting _setting;
-
+        public TCPConnection Connection
+        {
+            get { return _connection; }
+        }
         public ClientSocket(EndPoint serverEndPoint, EndPoint localEndPoint, SocketSetting setting)
         {
             Ensure.NotNull(serverEndPoint, "serverEndPoint");
@@ -47,6 +51,12 @@
             return this;
         }
 
+        public ClientSocket QueueMessage(byte[] messaage)
+        {
+            _connection.QueueMessage(messaage);
+            return this;
+        }
+
         private void OnconnectAsyncCompleted(object sender, SocketAsyncEventArgs e)
         {
             ProcessConnect(e);
@@ -64,6 +74,7 @@
                 OnConnectionFailed(e.SocketError);
                 return;
             }
+            _connection = new TCPConnection(_socket, _setting);
             OnConnectionEstablished();
         }
 

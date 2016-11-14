@@ -24,7 +24,7 @@
             _socket = SocketUtils.CreateSocket();
             _acceptSocketArgs = new SocketAsyncEventArgs();
             _acceptSocketArgs.Completed += AcceptCompleted;
-          
+
         }
 
         public void Start()
@@ -56,10 +56,7 @@
                 var firedAsync = _socket.AcceptAsync(_acceptSocketArgs);
                 if (!firedAsync)
                 {
-                    Task.Factory.StartNew(() =>
-                    {
-                        ProcessAccept(_acceptSocketArgs);
-                    }).Start();
+                    ProcessAccept(_acceptSocketArgs);
                 }
             }
             catch (Exception ex)
@@ -95,10 +92,33 @@
             }
         }
 
-       
+
         private void OnSocketAccepted(Socket socket)
         {
+            Task.Factory.StartNew(() =>
+            {
+                try
+                {
+                    var connection = new TCPConnection(socket, _setting);
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
+            });
+        }
 
+        private void OnMessageArrivedHandler(ITCPConnection connection,byte[] message)
+        {
+            try
+            {
+               
+            }
+            catch(Exception ex)
+            {
+               
+
+            }
         }
     }
 }
