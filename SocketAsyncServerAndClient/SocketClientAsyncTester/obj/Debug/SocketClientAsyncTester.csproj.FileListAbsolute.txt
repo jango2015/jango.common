@@ -1,0 +1,5 @@
+D:\workspace\jango_2016\SocketAsyncServerAndClient\SocketClientAsyncTester\bin\Debug\SocketClientAsyncTester.exe
+D:\workspace\jango_2016\SocketAsyncServerAndClient\SocketClientAsyncTester\bin\Debug\SocketClientAsyncTester.pdb
+D:\workspace\jango_2016\SocketAsyncServerAndClient\SocketClientAsyncTester\obj\Debug\SocketClientAsyncTester.csprojResolveAssemblyReference.cache
+D:\workspace\jango_2016\SocketAsyncServerAndClient\SocketClientAsyncTester\obj\Debug\SocketClientAsyncTester.exe
+D:\workspace\jango_2016\SocketAsyncServerAndClient\SocketClientAsyncTester\obj\Debug\SocketClientAsyncTester.pdb

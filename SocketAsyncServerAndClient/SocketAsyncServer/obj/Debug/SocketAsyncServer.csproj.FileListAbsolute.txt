@@ -1,0 +1,4 @@
+D:\workspace\jango_2016\SocketAsyncServerAndClient\SocketAsyncServer\bin\Debug\SocketAsyncServer.exe
+D:\workspace\jango_2016\SocketAsyncServerAndClient\SocketAsyncServer\bin\Debug\SocketAsyncServer.pdb
+D:\workspace\jango_2016\SocketAsyncServerAndClient\SocketAsyncServer\obj\Debug\SocketAsyncServer.exe
+D:\workspace\jango_2016\SocketAsyncServerAndClient\SocketAsyncServer\obj\Debug\SocketAsyncServer.pdb
