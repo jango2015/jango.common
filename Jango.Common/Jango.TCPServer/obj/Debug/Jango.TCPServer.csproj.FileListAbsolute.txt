@@ -1,0 +1,4 @@
+D:\workspace\jango_2016\jango.common\Jango.Common\Jango.TCPServer\bin\Debug\Jango.TCPServer.dll
+D:\workspace\jango_2016\jango.common\Jango.Common\Jango.TCPServer\bin\Debug\Jango.TCPServer.pdb
+D:\workspace\jango_2016\jango.common\Jango.Common\Jango.TCPServer\obj\Debug\Jango.TCPServer.dll
+D:\workspace\jango_2016\jango.common\Jango.Common\Jango.TCPServer\obj\Debug\Jango.TCPServer.pdb

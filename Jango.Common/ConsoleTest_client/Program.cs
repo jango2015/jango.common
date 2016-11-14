@@ -13,12 +13,14 @@ namespace ConsoleTest_client
         static void Main(string[] args)
         {
             var serverEndPoint = new IPEndPoint(SocketUtils.GetLocalIPV4(), 5000);
-            var localEndPoint = new IPEndPoint(SocketUtils.GetLocalIPV4(), 5001);
-            var setting = new SocketSetting();
-            var client = new ClientSocket(serverEndPoint, localEndPoint, setting);
+            //var localEndPoint = new IPEndPoint(SocketUtils.GetLocalIPV4(), 5001);
+            //var setting = new SocketSetting();
+            //var client = new ClientSocket(serverEndPoint, localEndPoint, setting);
 
-            client.Start();
-
+            var sendMsg = "this is the client send msg";
+            Jango.TCPClient.ClientSocket.Connect();
+            Jango.TCPClient.ClientSocket.Send(sendMsg);
+            //client.QueueMessage(System.Text.Encoding.Default.GetBytes(sendMsg));
             Console.ReadLine();
         }
     }

@@ -50,8 +50,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Jango.Common\Jango.Common.csproj">
-      <Project>{FE9087D6-CA90-4A37-8B51-4C61857A19FB}</Project>
+      <Project>{fe9087d6-ca90-4a37-8b51-4c61857a19fb}</Project>
       <Name>Jango.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Jango.TCPServer\Jango.TCPServer.csproj">
+      <Project>{1d4321e2-de35-46be-8fe2-878c95cc0f2b}</Project>
+      <Name>Jango.TCPServer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

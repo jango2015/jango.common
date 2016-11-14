@@ -113,8 +113,53 @@ namespace Jango.Common.NetWork
 
                 throw;
             }
+            TryReceive();
+
+
+        }
+        private bool EnterReceiving()
+        {
+            return Interlocked.CompareExchange(ref _receiving, 1, 0) == 0;
+        }
+        private void ExitReceiving()
+        {
+            Interlocked.Exchange(ref _receiving, 0);
         }
 
+        private void TryReceive()
+        {
+            if (!EnterReceiving()) return;
+
+            var buffer = _receiveDataBufferPool.Get();
+            if (buffer == null)
+            {
+                CloseInternal(SocketError.Shutdown, "Socket receive allocate buffer failed.", null);
+                ExitReceiving();
+                return;
+            }
+
+            try
+            {
+                _receiveSocketArgs.SetBuffer(buffer, 0, buffer.Length);
+                if (_receiveSocketArgs.Buffer == null)
+                {
+                    CloseInternal(SocketError.Shutdown, "Socket receive set buffer failed.", null);
+                    ExitReceiving();
+                    return;
+                }
+
+                bool firedAsync = _receiveSocketArgs.AcceptSocket.ReceiveAsync(_receiveSocketArgs);
+                if (!firedAsync)
+                {
+                    ProcessReceive(_receiveSocketArgs);
+                }
+            }
+            catch (Exception ex)
+            {
+                CloseInternal(SocketError.Shutdown, "Socket receive error, errorMessage:" + ex.Message, ex);
+                ExitReceiving();
+            }
+        }
         private bool EnterParsing()
         {
             return Interlocked.CompareExchange(ref _parsing, 1, 0) == 0;
@@ -136,6 +181,7 @@ namespace Jango.Common.NetWork
                     dataList.Add(data);
                     segmentList.Add(new ArraySegment<byte>(data.Buf.Array, data.Buf.Offset, data.DataLength));
                 }
+                receivedMsgSegments = segmentList;
                 DeParseData(segmentList);
 
             }
@@ -147,7 +193,6 @@ namespace Jango.Common.NetWork
                 ExitParsing();
             }
         }
-
         private void DeParseData(IEnumerable<ArraySegment<byte>> data)
         {
             if (!data.Any()) throw new ArgumentNullException("data");
@@ -157,6 +202,17 @@ namespace Jango.Common.NetWork
             }
         }
 
+        private List<ArraySegment<byte>> receivedMsgSegments = new List<ArraySegment<byte>>();
+        public string Get_ReceivedMsg()
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (var receivedMsgSegment in receivedMsgSegments)
+            {
+
+                sb.AppendFormat("*** {0} *** ", System.Text.Encoding.Default.GetString(receivedMsgSegment.Array));
+            }
+            return sb.ToString();
+        }
         private void Parse(ArraySegment<byte> bytes)
         {
             byte[] data = bytes.Array;

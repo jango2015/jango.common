@@ -22,9 +22,26 @@ namespace ConsoleTestServer
             var ipEndPoint = new IPEndPoint(SocketUtils.GetLocalIPV4(), 5000);
             var setting = new SocketSetting();
             var server = new ServerSocket(ipEndPoint, setting);
-            server.Start();
 
+
+            Jango.TCPServer.SocketManager m_socket = new Jango.TCPServer.SocketManager(200, 1024);
+            m_socket.Init();
+            m_socket.Start(ipEndPoint);
+            m_socket.ReceiveClientData += ReceiveClientDataCompleted;
+
+            Console.WriteLine();
             Console.ReadLine();
+        }
+
+        private static void ReceiveClientDataCompleted(Jango.TCPServer.AsyncUserToken token, byte[] buff)
+        {
+            Console.WriteLine();
+            if (buff != null)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                var msg = System.Text.Encoding.Default.GetString(buff);
+                Console.WriteLine(msg);
+            }
         }
 
         #region thread sleep  & SpinWait

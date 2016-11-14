@@ -1,0 +1,9 @@
+D:\workspace\jango_2016\jango.common\Jango.Common\Jango.TCPClient\bin\Debug\Jango.TCPClient.dll
+D:\workspace\jango_2016\jango.common\Jango.Common\Jango.TCPClient\bin\Debug\Jango.TCPClient.pdb
+D:\workspace\jango_2016\jango.common\Jango.Common\Jango.TCPClient\bin\Debug\Jango.Common.dll
+D:\workspace\jango_2016\jango.common\Jango.Common\Jango.TCPClient\bin\Debug\Newtonsoft.Json.dll
+D:\workspace\jango_2016\jango.common\Jango.Common\Jango.TCPClient\bin\Debug\Jango.Common.pdb
+D:\workspace\jango_2016\jango.common\Jango.Common\Jango.TCPClient\bin\Debug\Newtonsoft.Json.xml
+D:\workspace\jango_2016\jango.common\Jango.Common\Jango.TCPClient\obj\Debug\Jango.TCPClient.csprojResolveAssemblyReference.cache
+D:\workspace\jango_2016\jango.common\Jango.Common\Jango.TCPClient\obj\Debug\Jango.TCPClient.dll
+D:\workspace\jango_2016\jango.common\Jango.Common\Jango.TCPClient\obj\Debug\Jango.TCPClient.pdb

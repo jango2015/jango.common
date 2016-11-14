@@ -100,6 +100,7 @@
                 try
                 {
                     var connection = new TCPConnection(socket, _setting);
+                    _serverConnection = connection;
                 }
                 catch (Exception ex)
                 {
@@ -108,15 +109,22 @@
             });
         }
 
-        private void OnMessageArrivedHandler(ITCPConnection connection,byte[] message)
+        private TCPConnection _serverConnection;
+        public string Get_Received_Msg()
+        {
+            if (_serverConnection == null) return string.Empty;
+            return _serverConnection.Get_ReceivedMsg();
+        }
+
+        private void OnMessageArrivedHandler(ITCPConnection connection, byte[] message)
         {
             try
             {
-               
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-               
+
 
             }
         }

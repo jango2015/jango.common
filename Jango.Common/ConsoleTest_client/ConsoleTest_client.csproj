@@ -62,6 +62,10 @@
       <Project>{FE9087D6-CA90-4A37-8B51-4C61857A19FB}</Project>
       <Name>Jango.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Jango.TCPClient\Jango.TCPClient.csproj">
+      <Project>{2b1336a9-e4eb-49a9-9cb4-171c49bde86d}</Project>
+      <Name>Jango.TCPClient</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

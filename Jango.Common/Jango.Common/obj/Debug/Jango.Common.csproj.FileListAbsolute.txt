@@ -5,6 +5,5 @@ D:\workspace\jango_2016\Jango.Common\Jango.Common\obj\Debug\Jango.Common.dll
 D:\workspace\jango_2016\Jango.Common\Jango.Common\obj\Debug\Jango.Common.pdb
 D:\workspace\jango_2016\jango.common\Jango.Common\Jango.Common\bin\Debug\Jango.Common.dll
 D:\workspace\jango_2016\jango.common\Jango.Common\Jango.Common\bin\Debug\Jango.Common.pdb
-D:\workspace\jango_2016\jango.common\Jango.Common\Jango.Common\obj\Debug\Jango.Common.csprojResolveAssemblyReference.cache
 D:\workspace\jango_2016\jango.common\Jango.Common\Jango.Common\obj\Debug\Jango.Common.dll
 D:\workspace\jango_2016\jango.common\Jango.Common\Jango.Common\obj\Debug\Jango.Common.pdb
