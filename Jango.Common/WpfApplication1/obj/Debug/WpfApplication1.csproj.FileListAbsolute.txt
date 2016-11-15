@@ -15,6 +15,7 @@ D:\workspace\jango_2016\jango.common\Jango.Common\WpfApplication1\bin\Debug\ko\S
 D:\workspace\jango_2016\jango.common\Jango.Common\WpfApplication1\bin\Debug\ru\System.Windows.Interactivity.resources.dll
 D:\workspace\jango_2016\jango.common\Jango.Common\WpfApplication1\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
 D:\workspace\jango_2016\jango.common\Jango.Common\WpfApplication1\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\workspace\jango_2016\jango.common\Jango.Common\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache
 D:\workspace\jango_2016\jango.common\Jango.Common\WpfApplication1\obj\Debug\MainWindow.g.cs
 D:\workspace\jango_2016\jango.common\Jango.Common\WpfApplication1\obj\Debug\Window1.g.cs
 D:\workspace\jango_2016\jango.common\Jango.Common\WpfApplication1\obj\Debug\App.g.cs

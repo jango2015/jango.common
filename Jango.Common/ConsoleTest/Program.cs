@@ -20,8 +20,8 @@ namespace ConsoleTestServer
         static void Main(string[] args)
         {
             var ipEndPoint = new IPEndPoint(SocketUtils.GetLocalIPV4(), 5000);
-            var setting = new SocketSetting();
-            var server = new ServerSocket(ipEndPoint, setting);
+            //var setting = new SocketSetting();
+            //var server = new ServerSocket(ipEndPoint, setting);
 
 
             Jango.TCPServer.SocketManager m_socket = new Jango.TCPServer.SocketManager(200, 1024);

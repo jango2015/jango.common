@@ -130,7 +130,8 @@ namespace Jango.Common.NetWork
         {
             if (!EnterReceiving()) return;
 
-            var buffer = _receiveDataBufferPool.Get();
+            var buffer = new byte[1024];
+            //var buffer = _receiveDataBufferPool.Get();
             if (buffer == null)
             {
                 CloseInternal(SocketError.Shutdown, "Socket receive allocate buffer failed.", null);
