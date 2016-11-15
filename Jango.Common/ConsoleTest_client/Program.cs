@@ -19,7 +19,13 @@ namespace ConsoleTest_client
 
             var sendMsg = "this is the client send msg";
             Jango.TCPClient.ClientSocket.Connect();
-            Jango.TCPClient.ClientSocket.Send(sendMsg);
+            var a = 0;
+            System.Threading.Tasks.Parallel.For(0, 200000, i =>
+            {
+                a++;
+                Jango.TCPClient.ClientSocket.Send(sendMsg + i);
+                Console.WriteLine("当前共发送" + a);
+            });
             //client.QueueMessage(System.Text.Encoding.Default.GetBytes(sendMsg));
             Console.ReadLine();
         }
