@@ -27,3 +27,4 @@ D:\workspace\jango_2016\jango.common\Jango.Common\WpfApplication1\obj\Debug\WpfA
 D:\workspace\jango_2016\jango.common\Jango.Common\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
 D:\workspace\jango_2016\jango.common\Jango.Common\WpfApplication1\obj\Debug\WpfApplication1.exe
 D:\workspace\jango_2016\jango.common\Jango.Common\WpfApplication1\obj\Debug\WpfApplication1.pdb
+D:\workspace\jango_2016\jango.common\Jango.Common\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache
